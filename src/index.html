@@ -14,7 +14,8 @@
 
     <script type="text/javascript" src="./main.js"></script>
     <form
-    action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post"
+    >
       <fieldset class="fieldsetForm">
         <legend>Personal information</legend>
 
@@ -94,21 +95,28 @@
       <fieldset class="fieldsetForm">
         <legend>An interesting fact about you!</legend>
 
-        <label class="formField">
-          Do you love cats?
-          <input
-            type="radio"
-            name="loveToCats"
-            value="yes"
-          >
-          Yes
-          <input
-            type="radio"
-            name="loveToCats"
-            value="no"
-          >
-          No
-        </label>
+        <div class="formField">
+          
+          <label>
+            Do you love cats?
+            <input
+              type="radio"
+              name="loveToCats"
+              value="yes"
+            >
+            Yes
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="loveToCats"
+              value="no"
+            >
+            No
+          </label>
+
+        </div>
 
         <label class="formField">
           What is your favorite color?
@@ -153,6 +161,7 @@
 
       <button type="submit">Submit</button>
     </form>
+
 
   </body>
 </html>
